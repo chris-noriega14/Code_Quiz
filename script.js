@@ -5,7 +5,10 @@ var timerElement = document.querySelector("#timerStart");
 var highscore = [];
 var chosenQuestion = "";
 var timerCount;
+var userScore = 0;
 var QuizDone = false;
+
+
 const Questions = [
     {
         question: "Which element is not considered a commonly used data type?",
@@ -88,10 +91,28 @@ function startTimer () {
 
 function getQuestion() {
     QuizTitle.textContent = Questions[0].question;
-    console.log();
+    QuizStart.textContent = null;
 };
 
 function displayScore() {
-   instructions.textContent = "Your final score is: 25";
+   instructions.textContent = "Your final score is: " + userScore;
 };
 
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+
+	function showQuestions(questions, quizContainer){
+		// code will go here
+	}
+
+	function showResults(questions, quizContainer, resultsContainer){
+		// code will go here
+	}
+
+	// show the questions
+	showQuestions(questions, quizContainer);
+
+	// when user clicks submit, show results
+	submitButton.onclick = function(){
+		showResults(questions, quizContainer, resultsContainer);
+	}
+}
