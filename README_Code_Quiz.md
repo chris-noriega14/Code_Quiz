@@ -2,7 +2,7 @@ Homework #4: Code Quiz
 
 Here is the screenshot of the deployed application:
 
-Here is the GitHub pages URL of the deployed application:
+Here is the GitHub pages URL of the deployed application: https://chris-noriega14.github.io/Code_Quiz/
 
 Webpage Description:
 
