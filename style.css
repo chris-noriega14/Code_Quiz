@@ -1,0 +1,19 @@
+#title {
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    font-size: 30px;    
+}
+
+#timerStart {
+    position: relative;
+    text-align:end;
+    bottom:300px;
+}
+
+#container {
+    text-align: center;
+    position: relative;
+    bottom: -250px;
+    font-size: 30px;    
+}
