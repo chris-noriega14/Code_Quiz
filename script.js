@@ -8,7 +8,7 @@ var timerCount;
 var userScore = 0;
 var QuizDone = false;
 
-
+//This section of code creates an array of questions, answers, and correct answers for the Quiz.
 const Questions = [
     {
         question: "Which element is not considered a commonly used data type?",
@@ -62,15 +62,16 @@ const Questions = [
     }
 ];
 
-//Current Code
+//This section of code starts the Quiz and Timer 
 QuizStart.addEventListener('click',function startQuiz() {
-    timerCount = 20;
+    timerCount = 75;
     QuizStart.disabled = true;
     getQuestion()
     startTimer()
     timerElement.textContent = "Timer: " + timerCount;
 });
 
+//This is a function for the Quiz Timer
 function startTimer () {
     timer = setInterval(function() {
         timerCount--;
@@ -89,30 +90,13 @@ function startTimer () {
        
 };
 
+//This function generates the 5 questions of the quiz
 function getQuestion() {
     QuizTitle.textContent = Questions[0].question;
     QuizStart.textContent = null;
 };
 
+//This function displays your final score
 function displayScore() {
    instructions.textContent = "Your final score is: " + userScore;
 };
-
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
-
-	function showQuestions(questions, quizContainer){
-		// code will go here
-	}
-
-	function showResults(questions, quizContainer, resultsContainer){
-		// code will go here
-	}
-
-	// show the questions
-	showQuestions(questions, quizContainer);
-
-	// when user clicks submit, show results
-	submitButton.onclick = function(){
-		showResults(questions, quizContainer, resultsContainer);
-	}
-}
