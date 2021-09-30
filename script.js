@@ -1,3 +1,4 @@
+//This section displays the list of variables that will be used in the webpage.
 var instructions = document.querySelector("#container")
 var QuizTitle = document.querySelector("#title");
 var QuizStart = document.querySelector("#beginQuiz");
@@ -71,7 +72,7 @@ QuizStart.addEventListener('click',function startQuiz() {
     timerElement.textContent = "Timer: " + timerCount;
 });
 
-//This is a function for the Quiz Timer
+//This is a function for the Quiz Timer. The timer counts down one second at a time and the timer starts based on the value on the timerCount variable in the startQuiz function above.
 function startTimer () {
     timer = setInterval(function() {
         timerCount--;
