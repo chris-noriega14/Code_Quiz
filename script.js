@@ -7,6 +7,7 @@ var Scores = [];
 var chosenQuestion = "";
 var questionIndex = 0;
 var timerCount;
+var responseStatus = document.createElement('div');
 var QuizDone = false;
 var questions = [
     {
@@ -103,16 +104,17 @@ function getQuestion() {
 };
 
 function checkAnswer() {
+    instructions.appendChild(responseStatus);
     if (this.value !== questions[questionIndex].answer) {
         // penalize time
+        responseStatus.textContent = "Wrong!";
         timerCount -= 15;
         if (timerCount < 0) {
          timerCount = 0;
-         console.log("Wrong!");
         }
         timerEl.textContent = timerCount;
        } else {
-           console.log("Correct!");
+        responseStatus.textContent = "Correct!";
         }
        // move to next question
       questionIndex++;
