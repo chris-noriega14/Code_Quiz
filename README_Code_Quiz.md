@@ -12,4 +12,4 @@ You will be able to add your initials and final score to the current list of hig
 
 Once you press Submit, your score should be displayed in a highscore section of the webpage. There is also a button that will clear all of the saved highscores.
 
-Here is the screenshot of the deployed application: 
+Here is the screenshot of the deployed application: https://github.com/chris-noriega14/Code_Quiz/blob/main/screenshot-code-quiz.gif?raw=true
